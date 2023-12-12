@@ -1,0 +1,38 @@
+body {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    height: 100vh;
+    width: 100vw;
+}
+
+main {
+    flex-grow: 1;
+}
+
+footer {
+    flex-grow: 0;
+    flex-shrink: 0;
+    text-align: center;
+}
+
+.chinnco {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    text-align: center;
+    display: block;
+    margin: 0;
+    font-size: 50vmin;
+    color: transparent;
+    background: linear-gradient(to right, Magenta, yellow, Cyan, Magenta) 0% center/200%;
+    text-shadow: rgba(245,245,245,0.5) 3px 5px 1px;
+    background-clip: text;
+    animation: chinnco 2s linear infinite;
+}
+
+@keyframes chinnco {
+    100% { background-position-x: 200%; } 
+}
